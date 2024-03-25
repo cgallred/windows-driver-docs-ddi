@@ -146,6 +146,8 @@ When all APCs are disabled; that is, when <a href="/windows-hardware/drivers/ddi
 
 <b>FltGetFileNameInformation</b> cannot get the short name of a file in the pre-create path.
 
+<b>FltGetFileNameInformation</b> cannot get file name information if the I/O operation does not have a target FILE_OBJECT, for example on IRP_MJ_FILE_SYSTEM_CONTROL with IRP_MN_VERIFY_VOLUME.
+
 STATUS_FLT_INVALID_NAME_REQUEST is an error code.
 </td>
 </tr>
